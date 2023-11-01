@@ -1,0 +1,23 @@
+.case{
+    height: 150px;
+   
+}
+
+.nav{
+    height: 86px;
+
+}
+body{
+    background-image: url("nature.jpg") ;
+    background-image: no-repeat;
+}
+
+
+
+.ctn{
+    opacity: 0.9;
+}
+
+.search{
+    opacity: 1 !important;
+}
