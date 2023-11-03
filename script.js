@@ -38,9 +38,10 @@ fetch(url).then((response) =>
                         let iconUrl = `https://openweathermap.org/img/wn/${recupIcon}@2x.png`
                         $('#wicon').attr('src', iconUrl)
 
-
-                        for (i = 2; i < data.list.length; i = i + 8) {
-                                document.querySelector('#info').innerHTML += `
+                                document.querySelector('#info').innerHTML = ''
+                                for (i = 2; i < data.list.length; i = i + 8) {
+                                        document.querySelector('#info').innerHTML +=
+                                 `
                                 <div class="box-container col-lg-5 col-sm-12 border border-danger bg-primary  row ">
                                 <div class= "text-center ">
                                 <p>${data.list[i].dt_txt.split(' ')[0].split('-').reverse().join('/')}
@@ -90,7 +91,7 @@ document.querySelector('form').addEventListener('submit',function(e){
 
 
 
-apiCall("paris")
+apiCall("barcelone")
 
 
 
