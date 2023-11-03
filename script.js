@@ -42,19 +42,19 @@ fetch(url).then((response) =>
                                 for (i = 2; i < data.list.length; i = i + 8) {
                                         document.querySelector('#info').innerHTML +=
                                  `
-                                <div class="box-container col-lg-5 col-sm-12 border border-danger bg-primary  row ">
+                                <div class="box-container col-lg-12 col-sm-12 border border-danger bg-primary  row ">
                                 <div class= "text-center ">
-                                <p>${data.list[i].dt_txt.split(' ')[0].split('-').reverse().join('/')}
+                                <p class= "fs-3 text-light">${data.list[i].dt_txt.split(' ')[0].split('-').reverse().join('/')}
                              
                                 </p>
                             
-                                <p>
+                                <p class="fs-3 text-light" >
                                    Temperature min : ${data.list[i].main.temp_min
                                     + '°C'}
                                    
                                 </p>
                             
-                                <p>
+                                <p class="fs-3 text-light" >
                                     Temperature max : ${data.list[i].main.temp_max
                                     + '°C'}
                                 </p>
@@ -62,7 +62,7 @@ fetch(url).then((response) =>
                             
                                     <img src=" https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png">
                                 
-                                <p>
+                                <p class="fs-3 text-light" >
                                     ${data.list[i].weather[0].description}
                             
                                 </p>
@@ -91,7 +91,7 @@ document.querySelector('form').addEventListener('submit',function(e){
 
 
 
-apiCall("barcelone")
+apiCall("Noisy-le-grand")
 
 
 
