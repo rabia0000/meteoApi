@@ -1,14 +1,14 @@
-.case{
-    height: 150px;
+/* .case{
+    height: 200px;
    
-}
+} */
 
 .nav{
     height: 86px;
 
 }
 body{
-    background-image: url("nature.jpg") ;
+    background-image: url("sunset1.jpg") ;
     background-image: no-repeat;
 }
 
@@ -21,3 +21,8 @@ body{
 .search{
     opacity: 1 !important;
 }
+
+/* .box-container{
+height: 300px;
+width: 300px;
+} */

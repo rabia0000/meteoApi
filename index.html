@@ -20,65 +20,62 @@
 
     </header>
 
-    <div class="ctn container-lg border border-dark ">
+    <div class="ctn container-lg  ">
         <div class="row col-5 mt-2 mx-auto ">
             <form>
                 <div class="input-group ">
-                    <input type="text" class="form-control" placeholder="Entrer une ville">
+                    <input id="inputCity" type="text" class="form-control" placeholder="Entrer une ville">
                     <button class="btn btn-info btn-block" type="submit" id="">Rechercher</button>
                 </div>
-
+            </form>
         </div>
-        </form>
 
-            <div class="row justify-content-start mt-5">
-                <div class=" col-sm-3 border">
-                    <p class="text-center text-light fs-5 mt-3 ">Aujourd'hui</p>
-                      <p id="day"class="text-center text-light fs-5" > </p>
-                      <p id="hour" class="text-center text-light fs-5"> </p>
-                      <!-- <p id="temperature" class="text-center text-light fs-3"></p> -->
-               
+
+        <div class="row justify-content-start mt-5">
+            <div class=" col-sm-3 bg-">
+                <p class="text-center text-light fs-5 mt-3 ">Aujourd'hui</p>
+                <p id="day" class="day text-center text-light fs-5"> </p>
+                <p id="hour" class="text-center text-light fs-5"> </p>
+                <!-- <p id="temperature" class="text-center text-light fs-3"></p> -->
+
             </div>
-            <div class=" col-sm-6 mt-2 border">   
+            <div class=" col-sm-6 mt-2 ">
                 <h2 id="city" class="text-light text-start text-center fs-1 "></h2>
 
             </div>
-           
-            <div class="col-sm-3 border  ">
-               
+
+            <div class="col-sm-3 ">
+
                 <div id="icon" class="text-center"><img id="wicon" src="" alt=""></div>
-                <p id="description" class = "text-center text-dark fs-4 fst-italic "></p>
+                <p id="description" class="text-center text-dark fs-4 fst-italic "></p>
                 <p id="temperature" class="text-center text-dark fs-3"></p>
             </div>
 
         </div>
 
-
         <div class="col-sm-2 ">
-            <p class="text-light text-center fs-5 ">Prévision sur 4 jours</p>
+            <p class="text-light text-center fs-5 ">Prévision sur 5 jours</p>
         </div>
-        <div class="row">
 
-            <div class="case col-sm-12  border ">
-                <p class="text-center text-light fs-3 ">jour 2</p>
-            </div>
-            <div class=" case col-sm-12  border ">
-                <p class="text-center text-light fs-3">jour 3</p>
-            </div>
-            <div class=" case col-sm-12 border">
-                <p class="text-center text-light fs-3 ">jour 4</p>
-            </div>
-            <div class=" case col-sm-12 border ">
-                <p class="text-center text-light fs-3">jour 5</p>
-            </div>
+
+
+        <div id="info" classe="container-lg border border-sucess my-5 mx-5 ">
+
+
+
+
+
         </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
 </html>
@@ -87,3 +84,32 @@
 <!-- <input class="form-control form-control-lg" type="text" placeholder="Entrer une ville"
                 aria-label=".form-control-lg example">
             <button type="button" class="btn btn-primary my-2">Rechercher la ville</button> -->
+
+
+<!-- <div class="grid bg-primary gap-3 border border-dark ">
+
+                <p class="text-center text-light fs-3 ms-3 ">${data.list[i].dt_txt.split(' ')[0].split('-').reverse().join('/')}
+                </p>
+                
+                <div class="col-sm-3 ms-3 mt-3 ">
+                    <p id="temperature" class="text-dark fs-5 text-center">Temperature min : ${data.list[i].main.temp_min
+                        + '°C'}</p>
+                </div>
+            
+                <div class="col-sm-3 ms-3 mt-3 ">
+                    <p id="temperature" class=" text-dark fs-5 text-center">Temperature max : ${data.list[i].main.temp_max
+                        + '°C'}</p>
+                </div>
+                <div class="col-sm-2 text-center ">
+            
+                    <img src=" https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png">
+                </div>
+                <div class="col-sm-3 ms-3 mt-3 border ">
+                    <p id="temperature" class=" text-dark fs-5 text-center"> ${data.list[i].weather[0].description}</p>
+                  
+                </div>
+            </div>
+            <p></p> -->
+
+
+          
